@@ -1,0 +1,19 @@
+Código desenvolvido por Marco Henrique Nunes Pereira
+
+Enunciado Energéticos
+Para solucionar o problema proposto criei uma aplicação dividida em quatro classes pertencentes a dois packpages. Três delas fazem parte do packpage “utilities”, são as classes Client, OrderItem e Order. E a classe main, chamada de Program, faz parte do packpage “application”.
+
+A aplicação funciona da seguinte forma: 
+•	Será perguntando para o usuário quantos pedidos ele irá fazer, a partir da resposta será estanciado o cliente, com nome e id. 
+•	Depois será solicitado a quantidade de Energético Accelerator e o valor unitário do produto, com estas informações a classe OrderItem pode ser estanciada. 
+•	Com a classe OrderItem estanciada podemos adicionar o pedido na classe Order e repetir o processo para os demais pedidos.
+•	Com os dados estanciados será imprimido na tela o nome do cliente, com seu respectivo id, e os valores dos impostos sobre o pedido junto com seu valor total.
+•	Nesse momento será perguntando para o usuário se ele gostaria de dar descontos aos pedidos realizados. Em caso de resposta positiva, o desconto será dado informando o id do cliente e a porcentagem de desconto. Mostrando após a operação o nome do cliente, id e o novo valor com desconto.
+•	Caso o usuário queria dar desconto para outro cliente basta repetir a operação.
+
+Classe Client: é responsável por cadastrar o nome e o id do cliente.
+Classe OrderItem: é responsável por cadastrar e calcular o pedido e suas taxas.
+Classe Order: é responsável por cadastrar os pedidos em uma lista de pedidos. E calcular o desconto, caso o usuário deseje. E por fim, informar o pedido formatado em uma String.
+Classe Program: é a classe main da aplicação.
+
+Nota: deixei o separador decimal padrão conforme a máquina do usuário. No caso do Brasil é a vírgula. Também deixei como comentário o “Locale.setDefault(Locale.US)” e o “import java.util.Locale” caso o leitor do código queria deixar como padrão o separador decimal como ponto.
